@@ -7,9 +7,9 @@
         <string>feature</string>
     </array>
     <key>firstLineMatch</key>
-    <string>^Feature:(.+)$</string>
+    <string>^(Feature|Funcionalidade):(.+)$</string>
     <key>foldingStartMarker</key>
-    <string>(Feature\:|Background\:|Scenario Outline\:|Scenario\:|Examples\:)</string>
+    <string>((Feature|Funcionalidade)\:|(Background|Contexto|Cen(a|á)rio de Fundo|Fundo)\:|(Scenario|Cen(á|a)rio) Outline\:|(Scenario|Cen(á|a)rio)\:|Examples\:)</string>
     <key>foldingStopMarker</key>
     <string>^(\r\n|\n)$</string>
     <key>keyEquivalent</key>
@@ -20,13 +20,13 @@
     <array>
         <dict>
             <key>match</key>
-            <string>^\s+\b(And|Given|Then|When|But)\b</string>
+            <string>^\s+\b(And|Given|Then|When|But|Dado|Dada|Dados|Dadas|Ent(ã|a)o|E|Quando|Mas)\b</string>
             <key>name</key>
             <string>keyword.control.elements.behat</string>
         </dict>
         <dict>
             <key>match</key>
-            <string>(Feature\:|Background\:|Scenario Outline\:|Scenario\:|Examples\:)</string>
+            <string>((Feature|Funcionalidade)\:|(Background|Contexto|Cen(a|á)rio de Fundo|Fundo)\:|(Scenario|Cen(á|a)rio) Outline\:|(Scenario|Cen(á|a)rio)\:|Examples\:)</string>
             <key>name</key>
             <string>keyword.control.feature.behat</string>
         </dict>
